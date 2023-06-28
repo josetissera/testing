@@ -1,4 +1,4 @@
-import { findOneByEmail } from "../src/findOneByEmail";
+import { findOneByEmail } from "../src/index";
 import { Contacto } from "../src/contactos";
 
 describe("findByEmail", () => {
