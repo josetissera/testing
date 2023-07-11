@@ -23,9 +23,9 @@
   "homepage": "https://github.com/jblancoetec/ts-basic-app#readme",
   "devDependencies": {
     "@tsconfig/recommended": "1.0.1",
-    "@types/jest": "27.5.0",
-    "jest": "^28.1.0",
-    "ts-jest": "28.0.1",
+    "@types/jest": "^27.5.0",
+    "jest": "^28.1.3",
+    "ts-jest": "^28.0.1",
     "ts-node-dev": "1.1.8",
     "typescript": "4.6.4"
   }
