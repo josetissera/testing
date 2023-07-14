@@ -1,6 +1,6 @@
 import { Contacto } from "./contactos";
 
-function modificarEmail(id: number, mail: string, contactos: Contacto[]) {
+/*function modificarEmail(id: number, mail: string, contactos: Contacto[]) {
 
     function buscar(contacto:Contacto){
          return contacto.id === id
@@ -18,6 +18,23 @@ function modificarEmail(id: number, mail: string, contactos: Contacto[]) {
     }
     return contactos.map(modificarSiEsElBuscado)
 }
+*/
 
+function modificarEmail(id:number,mail:string,contactos:Contacto[]){
+    let listaNueva:Contacto[] = []
+    let modifiqueUnMail:boolean = false
+    contactos.forEach(elem => {
+        if (elem.id === id){
+            elem.email = mail
+            modifiqueUnMail = true
+        }
+        listaNueva.push(elem)
+    });
+    if(modifiqueUnMail){
+        return listaNueva
+    }
+    else throw  Error("No existe ese contacto")
+    
+}
 
 export { modificarEmail };
